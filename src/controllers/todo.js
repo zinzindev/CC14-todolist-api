@@ -1,7 +1,7 @@
-import catchAsync from '../utils/catch-async';
-import * as todoService from '../services/todo';
-import { validateTodo } from '../utils/validator';
-import { ValidationError } from '../utils/error';
+import catchAsync from '../utils/catch-async.js';
+import * as todoService from '../services/todo.js';
+import { validateTodo } from '../utils/validator.js';
+import { ValidationError } from '../utils/error.js';
 
 export const getAllTodos = catchAsync(async (req, res, next) => {
     const { task, status, sort } = req.query;
